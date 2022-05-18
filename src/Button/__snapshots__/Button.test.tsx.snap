@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Component renders the component with snapshot 1`] = `
+<DocumentFragment>
+  <button
+    aria-disabled="false"
+    class="button btn--primary btn--sm"
+    data-testid="button"
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      class="icon"
+      fill="none"
+      focusable="false"
+      height="20"
+      viewBox="0 0 14 14"
+      width="20"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M8 1.75v1a.25.25 0 0 1-.25.25h-3.5A.25.25 0 0 1 4 2.75v-1a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25Z"
+        stroke="var(--white)"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M8 2h1.483a1 1 0 0 1 1 1v6.5a1 1 0 0 1-1 1H2.5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1H4v0m.5 3.5h3m-3 2H6"
+        stroke="var(--white)"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+    Submit
+  </button>
+</DocumentFragment>
+`;

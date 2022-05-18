@@ -1,0 +1,95 @@
+@import "../variables.scss";
+@import "../typography.scss";
+
+@mixin button--($variants) {
+  background: $variants;
+  &:hover {
+    transition: all 0.1s ease;
+  }
+}
+
+.button {
+  @include font-defaults;
+  background: $primary-500;
+  color: $white;
+  text-align: center;
+  border: 1px solid transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: max-content;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: default;
+  user-select: none;
+  text-decoration: none;
+
+  &::-moz-focus-inner {
+    border-style: "none"; // Remove Firefox dotted outline.
+  }
+  &:focus,
+  &:active,
+  &:focus-visible {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 0px 0px 2px $white,
+      0px 0px 0px 4px $primary-500;
+    outline: transparent;
+  }
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .icon {
+    margin-right: 8px;
+  }
+}
+
+.btn--primary {
+  @include button--($primary-500);
+  border: 1px solid $primary-500;
+
+  &:hover {
+    background: $primary-700;
+  }
+}
+
+.btn--secondary {
+  border: 1px solid transparent;
+  @include button--($secondary-100);
+  color: $primary-700;
+  &:hover {
+    background: $secondary-200;
+  }
+}
+
+.btn--tertiary {
+  color: $primary-700;
+  background-color: transparent;
+  border: 1px solid $primary-500;
+  &:hover {
+    background: $primary-500;
+    color: $white;
+    .icon path {
+      stroke: $white;
+    }
+  }
+  &:focus,
+  &:focus-visible {
+    .icon path {
+      stroke: $white;
+    }
+  }
+}
+
+.btn--md {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+}
+
+.btn--lg {
+  padding: 16px 24px;
+  font-size: 1.3rem;
+}

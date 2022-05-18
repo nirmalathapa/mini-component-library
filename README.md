@@ -7,8 +7,8 @@ This project skeleton is taken from this article to get started with creating Re
 - [Rollup](https://github.com/rollup/rollup)
 - [Sass](https://sass-lang.com/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Storybook](https://storybook.js.org/) to help you create and show off your components
-- [Jest](https://jestjs.io/) and [React Testing Library](https://github.com/testing-library/react-testing-library) enabling testing of the components
+- [Storybook](https://storybook.js.org/)
+- [Jest](https://jestjs.io/) and [React Testing Library](https://github.com/testing-library/react-testing-library)
 
 ## Development
 
